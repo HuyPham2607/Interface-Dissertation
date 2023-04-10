@@ -40,7 +40,7 @@ function Navbars() {
         navigate(path);
     };
     const routeChangeHome = () => {
-        let path = `/`;
+        let path = `/Interface-Dissertation`;
         navigate(path);
     };
 

@@ -56,7 +56,7 @@ function CheckoutSuccess() {
     });
 
     const routeChangeHome = () => {
-        let path = `/`;
+        let path = `/Interface-Dissertation`;
         navigate(path);
         dispatch(updateLicensedfalse());
         dispatch(Complete());

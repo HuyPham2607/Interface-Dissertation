@@ -70,85 +70,58 @@ function App() {
                         <Route path="/Interface-Dissertation" element={<Home />} />
                         <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
                         <Route path="/register" element={<Register />} />
-                        <Route path="/Interface-Dissertation/profile" element={<Profile />} />
-                        <Route
-                            path="/Interface-Dissertation/checkout-success"
-                            element={licensed ? <CheckoutSuccess /> : <ErrorNotFound />}
-                        />
-                        <Route
-                            path="/Interface-Dissertation/cart"
-                            element={user ? <Cart /> : <Navigate to="/login" />}
-                        />
-                        <Route path="/Interface-Dissertation/products/:_id" element={<DetailProduct />} />
-                        <Route
-                            path="/Interface-Dissertation/admin/detailproduct/:_id"
-                            element={<DetailProductsAdmin />}
-                        />
+                        <Route path="/profile" element={<Profile />} />
+                        <Route path="/checkout-success" element={licensed ? <CheckoutSuccess /> : <ErrorNotFound />} />
+                        <Route path="/cart" element={user ? <Cart /> : <Navigate to="/login" />} />
+                        <Route path="/products/:_id" element={<DetailProduct />} />
+                        <Route path="/admin/detailproduct/:_id" element={<DetailProductsAdmin />} />
                         {/* admin */}
-                        <Route
-                            path="/Interface-Dissertation/admin/dashboard"
-                            element={admin ? <DashBoard /> : <ErrorNotFound />}
-                        />
-                        <Route
-                            path="/Interface-Dissertation/admin/order"
-                            element={admin ? <OrderAdmin /> : <ErrorNotFound />}
-                        />
-                        <Route
-                            path="/Interface-Dissertation/admin/chart"
-                            element={admin ? <Chart /> : <ErrorNotFound />}
-                        />
-                        <Route path="/Interface-Dissertation/admin/login" element={<LoginAdmin />} />
-                        <Route path="/Interface-Dissertation/admin/newProduct" element={<NewProducts />} />
-                        <Route path="/Interface-Dissertation/admin/products" element={<ProductsAdmin />} />
-                        <Route path="/Interface-Dissertation/admin/users" element={<UserAdmin />} />
+                        <Route path="/admin/dashboard" element={admin ? <DashBoard /> : <ErrorNotFound />} />
+                        <Route path="/admin/order" element={admin ? <OrderAdmin /> : <ErrorNotFound />} />
+                        <Route path="/admin/chart" element={admin ? <Chart /> : <ErrorNotFound />} />
+                        <Route path="/admin/login" element={<LoginAdmin />} />
+                        <Route path="/admin/newProduct" element={<NewProducts />} />
+                        <Route path="/admin/products" element={<ProductsAdmin />} />
+                        <Route path="/admin/users" element={<UserAdmin />} />
 
                         {/* men */}
-                        <Route path="/Interface-Dissertation/men" element={<Men />} />
-                        <Route path="/Interface-Dissertation/shortmen" element={<ShortMen />} />
-                        <Route path="/Interface-Dissertation/bacsicseseentinails" element={<BacsicsEseentinals />} />
-                        <Route path="/Interface-Dissertation/shoes" element={<Shoes />} />
-                        <Route path="/Interface-Dissertation/clubfootball" element={<ClubFootBall />} />
-                        <Route path="/Interface-Dissertation/gymandtraining" element={<GymandTraining />} />
-                        <Route path="/Interface-Dissertation/TopAndTShirts" element={<TopAndTShirts />} />
-                        <Route path="/Interface-Dissertation/allclothingmen" element={<AllClothingMen />} />
-                        <Route path="/Interface-Dissertation/shoes-runing" element={<ShoesRunning />} />
-                        <Route path="/Interface-Dissertation/jordan" element={<Jordan />} />
+                        <Route path="/men" element={<Men />} />
+                        <Route path="/shortmen" element={<ShortMen />} />
+                        <Route path="/bacsicseseentinails" element={<BacsicsEseentinals />} />
+                        <Route path="/shoes" element={<Shoes />} />
+                        <Route path="/clubfootball" element={<ClubFootBall />} />
+                        <Route path="/gymandtraining" element={<GymandTraining />} />
+                        <Route path="/TopAndTShirts" element={<TopAndTShirts />} />
+                        <Route path="/allclothingmen" element={<AllClothingMen />} />
+                        <Route path="/shoes-runing" element={<ShoesRunning />} />
+                        <Route path="/jordan" element={<Jordan />} />
                         <Route path="hoodiesandsweatshirts" element={<HoodiesAndSweatShirts />} />
 
                         {/* women */}
-                        <Route path="/Interface-Dissertation/women" element={<Women />} />
-                        <Route
-                            path="/Interface-Dissertation/performanceEssentinals"
-                            element={<PerformanceEseentinals />}
-                        />
-                        <Route path="/Interface-Dissertation/SustainableMaterial" element={<SustainableMaterial />} />
-                        <Route path="/Interface-Dissertation/allshosewomen" element={<ShoesWomen />} />
-                        <Route path="/Interface-Dissertation/running-women" element={<ShoesRunningWomen />} />
-                        <Route path="/Interface-Dissertation/tennis-women" element={<TennisWomen />} />
-                        <Route path="/Interface-Dissertation/gymandtraining-women" element={<GymandTrainingWomen />} />
-                        <Route path="/Interface-Dissertation/allclothing-women" element={<AllClothingWomen />} />
-                        <Route path="/Interface-Dissertation/topandtshirts-women" element={<TopAndTShirtsWomen />} />
-                        <Route
-                            path="/Interface-Dissertation/hoodiesandsweatshirt-women"
-                            element={<HoodiesAndSweatShirtsWomen />}
-                        />
-                        <Route path="/Interface-Dissertation/pantsandlegging-women" element={<PantsandLeggings />} />
+                        <Route path="/women" element={<Women />} />
+                        <Route path="/performanceEssentinals" element={<PerformanceEseentinals />} />
+                        <Route path="/SustainableMaterial" element={<SustainableMaterial />} />
+                        <Route path="/allshosewomen" element={<ShoesWomen />} />
+                        <Route path="/running-women" element={<ShoesRunningWomen />} />
+                        <Route path="/tennis-women" element={<TennisWomen />} />
+                        <Route path="/gymandtraining-women" element={<GymandTrainingWomen />} />
+                        <Route path="/allclothing-women" element={<AllClothingWomen />} />
+                        <Route path="/topandtshirts-women" element={<TopAndTShirtsWomen />} />
+                        <Route path="/hoodiesandsweatshirt-women" element={<HoodiesAndSweatShirtsWomen />} />
+                        <Route path="/pantsandlegging-women" element={<PantsandLeggings />} />
 
                         {/* Kids */}
-                        <Route path="/Interface-Dissertation/kids" element={<Kids />} />
-                        <Route path="/Interface-Dissertation/bagsandbackpackskids" element={<ClubFootBallKids />} />
-                        <Route path="/Interface-Dissertation/clubfootballkids" element={<ShoesKids />} />
-                        <Route path="/Interface-Dissertation/sandalandslides-kids" element={<SandalsandSlides />} />
-                        <Route path="/Interface-Dissertation/jordan-kids" element={<JordanKids />} />
-                        <Route path="/Interface-Dissertation/lifestyle-kids" element={<LifeStyleKids />} />
-                        <Route path="/Interface-Dissertation/allclothing-kids" element={<AllClothingKids />} />
-                        <Route path="/Interface-Dissertation/topandtshirts-kids" element={<TopAndTShirtsKids />} />
-                        <Route
-                            path="/Interface-Dissertation/hoodiesandsweatshirt-kids"
-                            element={<HoodiesAndSweatShirtskids />}
-                        />
-                        <Route path="/Interface-Dissertation/short-kids" element={<ShortKids />} />
-                        <Route path="/Interface-Dissertation/pantsandlegging-kids" element={<PantsandLeggingsKids />} />
+                        <Route path="/kids" element={<Kids />} />
+                        <Route path="/bagsandbackpackskids" element={<ClubFootBallKids />} />
+                        <Route path="/clubfootballkids" element={<ShoesKids />} />
+                        <Route path="/sandalandslides-kids" element={<SandalsandSlides />} />
+                        <Route path="/jordan-kids" element={<JordanKids />} />
+                        <Route path="/lifestyle-kids" element={<LifeStyleKids />} />
+                        <Route path="/allclothing-kids" element={<AllClothingKids />} />
+                        <Route path="/topandtshirts-kids" element={<TopAndTShirtsKids />} />
+                        <Route path="/hoodiesandsweatshirt-kids" element={<HoodiesAndSweatShirtskids />} />
+                        <Route path="/short-kids" element={<ShortKids />} />
+                        <Route path="/pantsandlegging-kids" element={<PantsandLeggingsKids />} />
 
                         {/*error */}
                         <Route path="*" element={<ErrorNotFound />} />

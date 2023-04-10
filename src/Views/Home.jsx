@@ -6,12 +6,10 @@ import Footer from '../Components/layout/Footer/Footer.jsx';
 import CarouselProducts from '../Components/CarouselProducts/CarouselProducts.jsx';
 import Trending from '../Components/Trending/Trending.jsx';
 import MoreNike from '../Components/MoreNike/MoreNike.jsx';
-import Category from './Category.jsx';
 function Home() {
     return (
         <>
             <Navbars />
-            {/* <Category type={['men', 'women', 'kids']} /> */}
             <UncontrolledExample />
             <Announcement />
             <CarouselProducts />

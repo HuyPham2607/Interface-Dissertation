@@ -68,8 +68,8 @@ function App() {
                     <Routes>
                         {/* user */}
                         <Route path="/Interface-Dissertation" element={<Home />} />
-                        <Route path="/Interface-Dissertation/login" element={user ? <Navigate to="/" /> : <Login />} />
-                        <Route path="/Interface-Dissertation/register" element={<Register />} />
+                        <Route path="/login" element={user ? <Navigate to="/" /> : <Login />} />
+                        <Route path="/register" element={<Register />} />
                         <Route path="/Interface-Dissertation/profile" element={<Profile />} />
                         <Route
                             path="/Interface-Dissertation/checkout-success"

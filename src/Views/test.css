@@ -1,0 +1,10 @@
+.test {
+    height: 100%;
+}
+
+.content-type {
+    display: none;
+}
+.test:hover .content-type {
+    display: block;
+}
